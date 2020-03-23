@@ -103,9 +103,9 @@ div.buttons div {
 		pointer-events: none;
 		box-shadow: none;
 		cursor: not-allowed;
-		background: grayscale($button-background);
-		color: grayscale($button-color);
-		border-color: grayscale(extract-color($button-border));
+		background: $button-background;
+		color: $button-color;
+		border-color: $button-border;
 	}
 
 	&:focus {

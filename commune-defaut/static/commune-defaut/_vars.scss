@@ -1,5 +1,5 @@
-$primary-color: #444444;
-$secondary-color: #0e6ba4;
+$primary-color: var(--secondary-color);
+$secondary-color: var(--primary-color);
 
 $width: 1240px;
 $font-size: 15px;
@@ -7,7 +7,7 @@ $font-family: Roboto, sans-serif;
 $nav-background: $secondary-color;
 $nav-color: white;
 $nav-active-color: $nav-background;
-$nav-item-hover-background: darken($nav-background, 10%);
+$nav-item-hover-background: $nav-background;
 $nav-mobile-menu-item-hover-background: $nav-background;
 $nav-mobile-menu-item-hover-color: white;
 $border-radius: 0;

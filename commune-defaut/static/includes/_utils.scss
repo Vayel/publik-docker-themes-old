@@ -16,11 +16,7 @@ $black: #000000 !default;
 }
 
 @function text-color($color) {
-	@if (lightness($color) > 50) {
-		@return $black;
-	} @else {
-		@return $white;
-	}
+  @return $white;
 }
 
 @function extract-color($border){
