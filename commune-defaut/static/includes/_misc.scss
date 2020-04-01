@@ -266,7 +266,11 @@ div.successnotice,
 div.warningnotice,
 div.errornotice {
 	background: $notification_error_color;
-	color: text-color($notification_error_color);
+  @if lightness($notification_error_color) > 50 {
+    color: #000;
+  } @else {
+    color: text-color($notification_error_color);
+  }
 	margin: 1rem 0;
 	padding: 0.5rem;
 	padding-left: 4rem;
@@ -335,8 +339,12 @@ div.successnotice {
 
 #messages li.info,
 div.infonotice {
-	background: $notification_info_color;
-	color: text-color($notification_info_color);
+  background: $notification_info_color;
+  @if lightness($notification_info_color) > 50 {
+    color: #000;
+  } @else {
+    color: text-color($notification_info_color);
+  }
 	border-color: darken($notification_info_color, 40%);
 	&::before {
 		content: "\f05a";
